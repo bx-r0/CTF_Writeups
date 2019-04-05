@@ -22,7 +22,6 @@
     width: 100%;
     flex: 5 0;
   }
-  // Sorry, the CSS-person left in a wormhole...
   </style>
 </head>
 <body>
@@ -42,33 +41,26 @@ function encode() {
   }
   return false;
 }
-
 function decode() {
   var t = input.value;
   input.value = _decode(t);
   return false;
 }
-
 function _encode(input) {
   var a=[];
   for (var i=0; i<input.length; i++) {
     var t = input.charCodeAt(i);
-
     // 8 loops for 8 bit ascii!
     for (var j=0; j<8; j++) {
-
       //This maps the position of the binary 1's in a list
       //e.g 0,5,6 == 01100001
       //              65    0
-
       if ((t >> j) & 1) {
-
         // Just is j + 1!
         a.push(1 + j + (input.length - 1 - i) * 8);
       }
     }
   }
-
   //Randomises the order of the list!
   var b = [];
   while (a.length) {
@@ -86,23 +78,19 @@ function _encode(input) {
   }
   return r;
 }
-
 function setCharAt(str,index,chr) {
     if(index > str.length-1) return str;
     return str.substr(0,index) + chr + str.substr(index+1);
 }
-
 function flipAndConvertToAscii(str) {
     parts = str.split("")
     parts.reverse()
     binstr = parts.join("")
     return String.fromCharCode(parseInt(binstr,2).toString(10))
 }
-
 // Everything below this line was lost due to cosmis radiation. The engineer who knows
 // where the backups are stored already left.
 function _decode(input) {
-
     var b = []
     var dashCount = 0
     for (var i = 0; i < input.length; i++)
@@ -116,28 +104,22 @@ function _decode(input) {
             dashCount = 0;
         }
     }
-
     b.sort(function(a, b){return a - b});
     
     values = []
-    var boundInc = 8
-    var bound = boundInc;
-    var reduction = 0;
+    var bound = 8;
     var temp = "00000000"
     for (var x = 0; x < b.length; x++)
     {
         if (b[x] > bound)
         {
-            bound += boundInc
-            reduction += boundInc
-
+            bound += 8
             values.push(flipAndConvertToAscii(temp))
-
             //Reset
             temp = "00000000"
         }
        
-        pos = b[x] - reduction - 1;
+        pos = b[x] - (bound - 8) - 1;
         temp = setCharAt(temp, pos, "1")
         
     }
@@ -146,7 +128,6 @@ function _decode(input) {
     return values.join("")
 }
 </script>
-
 <!-- Puzzle by Alok. Enjoy :) -->
 </body>
 </html>

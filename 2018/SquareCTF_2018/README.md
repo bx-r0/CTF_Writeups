@@ -17,3 +17,24 @@
     ├── [X] C8: captcha
     └── C10: fixed point
 ```
+
+### C1 - dot-n-dash
+
+[Write up](./dot-n-dash/README.md)
+
+### C2 - flipping bits
+
+TODO
+
+### C3 - shredded
+
+TODO
+
+### C5 - de-anonymization
+
+TODO
+
+### C8 - captcha
+
+TODO
+
