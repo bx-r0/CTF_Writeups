@@ -1,18 +1,14 @@
 # ENCRYPT CTF
 
+<img align="right" src="./logo.png"/>
+
 ## Pwn
 
-```pwn0 - 25 Points```
+[```pwn0 - 25 Points```](./pwn/pwn_0/README.md)
 
-[Write-up](./pwn/pwn_0/README.md)
+[```pwn1 - 50 Points```](./pwn/pwn_1/README.md)
 
-```pwn1 - 50 Points```
-
-[Write-up](./pwn/pwn_1/README.md)
-
-```pwn2 - 100 Points```
-
-[Write-up](./pwn/pwn_2/README.md)
+[```pwn2 - 100 Points```](./pwn/pwn_2/README.md)
 
 ## Web
 
@@ -22,6 +18,4 @@ TODO
 
 ## Misc
 
-```ham-me-baby - 50 Points```
-
-[Write up](./misc/ham-me-baby/README.md)
+[```ham-me-baby - 50 Points```](./misc/ham-me-baby/README.md)
