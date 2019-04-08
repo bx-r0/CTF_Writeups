@@ -2,22 +2,7 @@
 
 ![](./brief.png)
 
-```
-[Meanwhile at the NSA on a Friday afternoon]
-
-Manager: Hey, we're going to be releasing our internal video training for Ghidra and we need you to watch 
-it all to flag any content that needs to be redacted before release.
-
-Manager: The release is next Monday. Hope you didn't have any weekend plans!
-
-You: Uhhh, sure bu-
-
-Manager: Great! Thanks. Make sure nothing gets out.
-
-You: ... [looks at clock. It reads 3:45PM]
-
-You: [Mutters to self] No way am I watching all of this: https://static.swampctf.com/ghidra_nsa_training.mp4
-```
+https://static.swampctf.com/ghidra_nsa_training.mp4
 
 The video file can be found at the url above, its too big for an upload to Github.
 
@@ -41,7 +26,7 @@ The cropped result is below:
 
 The number of frame skipped was reduced and the algorithm was reduced to around 25 frames (1 second) jumps. This increased the execution time but allowed thorough analysis of the video's frames. 
 
-The overall execution time was ~2hr. I don't think that is the best that could be done and would like to see other peoples more efficient solutions.
+The overall execution time was ~2hr. I don't think that is the best that could be done and would like to see more efficient solutions.
 
 ### Code
 

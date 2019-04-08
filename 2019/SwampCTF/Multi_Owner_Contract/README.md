@@ -14,7 +14,7 @@ We were provided with a smart contract that we had to deploy on the Ethereum Rop
 
 Below is the provided contract:
 
-```javascript
+```solidity
 
 pragma solidity ^0.4.24;
 
@@ -80,7 +80,7 @@ contract Ownable {
 ```
 The flag will be provided when we make ourselves the owner of the contract. This is show in this function:
 
-```javascript
+```solidity
 function isComplete() public view returns(bool) {
     return owners[msg.sender];
 }
@@ -91,15 +91,14 @@ Initially I thought calling the ```renounceOwnership()``` method was the way for
 
 Then I noticed the spelling mistake in the name of the 'contructor()' method, this is instead of 'constructor()'. This means this method can be called again after the creation of the contract.
 
-```javascript
+```solidity
 function contructor() public payable {
     require(msg.value == 0.5 ether, "Must send 0.5 Ether");
     owners[msg.sender] = true;
 }
 ```
-The method required 0.5 ETH to run, this required the use of another account due to the ![Ropsten facet](https://faucet.ropsten.be/) only providing 1 ETH per 24 hours.
 
-By calling the wrongly name constructor method again I was assigned owner. I then added the original account as a owner to complete the challenge.
+By calling the wrongly name constructor method again I was assigned owner!
 
 After the website infrastructure called the main contract to verify completion I was provided with a flag.
 

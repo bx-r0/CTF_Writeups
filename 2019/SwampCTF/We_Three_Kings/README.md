@@ -2,7 +2,7 @@
 
 ![](./brief.png)
 
-The challenge also provides the code used on the netcat server. I've redacted some code for legality purposes.
+The challenge provides the code used on the netcat server. I've redacted some code for legality purposes.
 
 ```python
 #!/usr/bin/env python2
@@ -51,7 +51,7 @@ encrypt_message(key, key)
 This opens up the encryption up to the ```key == IV``` attack.
 
 ### Exploit
-Because we can choose plaintext we have a Chosen Plaintext Attack **CPA**.
+Because we can choose plaintext to be encrypted we have a Chosen Plaintext Attack **CPA**.
 
 The attack begins by encrypting at least 3 blocks of plaintext
 
@@ -81,7 +81,6 @@ PT1' ⊕ PT3' == IV (Key)
 
 This relationship is due to how AES-CBC mode operates.
 
-By looking at the classic
 
 ![](./CBC_decryption.png)
 

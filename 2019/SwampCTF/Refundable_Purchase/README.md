@@ -64,7 +64,7 @@ contract RefundablePurchase {
 }
 ```
 
-The vulnerable line can be seen in the ```refund()``` method:
+The vulnerability can be seen in the ```refund()``` method:
 
 ```solidity
 function refund() public {
@@ -82,7 +82,8 @@ The line below is the key element of the potential exploit:
 msg.sender.call.value(amount)("");
 ```
 
-This is where we can exploit this contract. This line sends the refunded Ether to the address to the calling address. However, what if the return address is an Ethereum contract? This will trigger the fallback function of the contract. In Solidity smart contracts any funds send to a contract without any data will be processed by the **fallback** address (if defined).
+This is where we can exploit this contract. This line sends the refunded Ether to the calling address. However, what if the return address is an Ethereum contract? This will trigger the fallback function of the contract. 
+In Solidity smart contracts any funds sent to a contract without any data will be processed by the **fallback** address (if defined).
 
 We can also see that the contract values are updated after the external call with:
 
