@@ -2,7 +2,7 @@
 
 ![](./brief.png)
 
-The challenge provides the code used on the netcat server. I've redacted some code for legality purposes.
+The challenge provides the code used on the netcat server. I've redacted some code for legibility purposes.
 
 ```python
 #!/usr/bin/env python2
