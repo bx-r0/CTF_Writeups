@@ -93,6 +93,8 @@ refunds[msg.sender] = 0;
 
 We can use the concept of fallback function on a contract we control to call the refund method again and withdraw more Ether than we have been assigned! We can repeat this as many times are we want to completely drain the contract.
 
+This is known as a **Reentrancy Attack** and was the method used in the infamous [DAO hack](https://www.coindesk.com/understanding-dao-hack-journalists).
+
 Below is the malicious contract used:
 
 ```solidity
