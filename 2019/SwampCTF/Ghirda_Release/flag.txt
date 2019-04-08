@@ -1,0 +1,6 @@
+3:22:50     -  FLAG(1/4): flag{l34      -   304250
+7:25:15     -  FLAG(2/4): kfr33_n4      -   667875
+11:46:27    -  FLAG(3/4): tion4l_s      -   1059675
+13:37:09    -  FLAG(4/4): 3cur1ty}      -   1225725
+
+flag{l34kkfr33_n4tion4l_s3cur1ty}
