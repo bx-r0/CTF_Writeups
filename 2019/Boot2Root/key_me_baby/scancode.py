@@ -66,6 +66,11 @@ except FileNotFoundError:
 result = [''] * 100
 writePosition = 0
 for line in data:
+
+    # Checks for length
+    if len(line.strip()) != 16:
+        continue
+
     line = line.replace(":", "")
 
     parts = re.findall(r"..", line)

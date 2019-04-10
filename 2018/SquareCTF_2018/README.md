@@ -24,7 +24,7 @@
 
 ### C2 - flipping bits
 
-TODO
+[Write up](./flipping_bits/README.md)
 
 ### C3 - shredded
 

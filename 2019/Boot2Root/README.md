@@ -2,10 +2,7 @@
 
 ### Forensics
 
-```key_me_baby```
-
-TODO
-<!-- [```key_me_baby - Points: 200```](./key_me_baby/README.md) -->
+[```key_me_baby - Points: 200```](./key_me_baby/README.md)
 
 ### Misc
 
