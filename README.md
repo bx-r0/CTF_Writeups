@@ -10,8 +10,10 @@ https://ctftime.org/team/68942
 | 35  | SwampCTF              | [Write up](./2019/SwampCTF/README.md)          | https://ctftime.org/event/779 |
 | 108 | ENCRYPT CTF           | [Write up](./2019/ENCRYPT/README.md)           | https://ctftime.org/event/771 |
 | 68  | b00t2root '19         | [Write up](./2019/Boot2Root/README.md)         | https://ctftime.org/event/780 |
-| 89  | 0CTF/TCTF 2019 Quals  | <!--[Write up](./2019/0CTF/README.md)-->       | https://ctftime.org/event/736 |
-| 194 | TAMUctf               | <!--[Write up](./2019/TAMUctf/README.md)-->    | https://ctftime.org/event/740 |
+| 194 | TAMUctf               | [Write up](./2019/TAMUctf/README.md)    | https://ctftime.org/event/740 |
+
+<!-- | 89  | 0CTF/TCTF 2019 Quals  |[Write up](./2019/0CTF/README.md)    | https://ctftime.org/event/736 | -->
+
 
 ### 2018
 

@@ -2,7 +2,7 @@
 
 <img align="right" src="./logo.png"/>
 
-## Pwn
+### Pwn
 
 [```pwn0 - 25 Points```](./pwn/pwn_0/README.md)
 
@@ -10,12 +10,12 @@
 
 [```pwn2 - 100 Points```](./pwn/pwn_2/README.md)
 
-## Web
+### Web
 
 ```repeaaaaaat - 150 Points```
 
 TODO
 
-## Misc
+### Misc
 
 [```ham-me-baby - 50 Points```](./misc/ham-me-baby/README.md)
