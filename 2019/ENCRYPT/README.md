@@ -10,12 +10,6 @@
 
 [```pwn2 - 100 Points```](./pwn/pwn_2/README.md)
 
-### Web
-
-```repeaaaaaat - 150 Points```
-
-TODO
-
 ### Misc
 
 [```ham-me-baby - 50 Points```](./misc/ham-me-baby/README.md)
