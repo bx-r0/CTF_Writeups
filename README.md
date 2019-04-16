@@ -1,6 +1,6 @@
-# CTF_Writeups
+# CTF Writeups
 
-### Team
+### Team CTFtime Profile
 https://ctftime.org/team/68942
 
 ### 2019
@@ -11,9 +11,6 @@ https://ctftime.org/team/68942
 | 108 | ENCRYPT CTF           | [Write up](./2019/ENCRYPT/README.md)           | https://ctftime.org/event/771 |
 | 68  | b00t2root '19         | [Write up](./2019/Boot2Root/README.md)         | https://ctftime.org/event/780 |
 | 194 | TAMUctf               | [Write up](./2019/TAMUctf/README.md)           | https://ctftime.org/event/740 |
-
-<!-- | 89  | 0CTF/TCTF 2019 Quals  |[Write up](./2019/0CTF/README.md)    | https://ctftime.org/event/736 | -->
-
 
 ### 2018
 
