@@ -1,6 +1,6 @@
 # Swamp CTF
 
-<img align="right" src="./logo.png"/>
+<img align="right" width=150 src="./logo.png"/>
 
 ### Smart-Contract
 
