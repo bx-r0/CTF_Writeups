@@ -61,7 +61,7 @@ function handle_post() {
 }
 ```
 
-The `check_name_secret` checks that a product exists that has the entered `name` and `secret` combo. 
+The `check_name_secret` checks that a product exists with the entered `name` and `secret` combo. 
 
 However the `get_product` function only returns an element from the database by using the `name` parameter! 
 This means we can add another element called `facebook` with a `secret` we know and get the program to return the first product found with the name `facebook` i.e. the one with the flag!
