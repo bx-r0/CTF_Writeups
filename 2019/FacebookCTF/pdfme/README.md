@@ -83,9 +83,9 @@ When placed in the compiler we get this output!
 
 ![](./images/passwd.png)
 
-This is the last line of the `/etc/passwd` file and shows the arbitrary file read attack was successful. This attack is very interesting because it can be executed through normally innate files such as a spreadsheets or word documents.
+This is the last line of the `/etc/passwd` file and shows the arbitrary file read attack was successful. This attack is very interesting because it can be executed through normally innate files such as a spreadsheet or word document.
 
-Using the home directory we can see `/home/libreoffice_admin` as the users home directory. With a little trial and error the file path used was `/home/libreoffice_admin/flag`.
+Using the home directory we can see `/home/libreoffice_admin` as the users home directory. With a little trial and error, the file path used was `/home/libreoffice_admin/flag`.
 
 ![](./images/flag.png)
 
