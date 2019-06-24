@@ -1,12 +1,12 @@
 ![](./brief.png)
 
-At the beginning of the challenge we are provided with a simple web application.
+At the beginning of the challenge, we are provided with a simple web application.
 
 ![](./images/start_page.png)
 
 Alongside this, we are provided with the source code of the application.
 
-On inspect of the source code it seems SQL Injection isn't an option due to correct preparation of the 
+On inspection of the source code, it seems SQL Injection isn't an option due to correct preparation of the 
 SQL statements. 
 
 E.g.
@@ -32,9 +32,9 @@ INSERT INTO products VALUES('whatsapp', sha256(....), ....);
 INSERT INTO products VALUES('oculus-rift', sha256(....), ....);
 */
 ```
-We somehow need to reach the the description value of the `facebook` element
+We somehow need to reach the description value of the `facebook` element
 
-# Expolit
+# Exploit
 
 The exploitable code is here:
 ```php
@@ -61,9 +61,9 @@ function handle_post() {
 }
 ```
 
-The `check_name_secret` checks that a product exists that has the entered `name` and `secret` combo. 
+The `check_name_secret` checks that a product exists with the entered `name` and `secret` combo. 
 
-However the `get_product` function only returns an element from the database by using the `name` parameter! 
+However, the `get_product` function only returns an element from the database by using the `name` parameter! 
 This means we can add another element called `facebook` with a `secret` we know and get the program to return the first product found with the name `facebook` i.e. the one with the flag!
 
 However, trying to do this we get this error:
@@ -72,7 +72,7 @@ However, trying to do this we get this error:
 Error: Product name already exists, please enter again
 ```
 
-Lets try adding a space?
+Let's try adding a space?
 
 This gives us:
 
@@ -80,7 +80,7 @@ This gives us:
 Product has been added
 ```
 
-Then using the details we added, when we try to view the `facebook` product we get the flag!
+Then using the details we submitted, when we view the `facebook` product the flag is returned!
 
 ![](./images/flag.png)
 
