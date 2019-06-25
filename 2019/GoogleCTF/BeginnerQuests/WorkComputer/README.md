@@ -151,7 +151,7 @@ CTF{Th3r3_1s_4lw4y5_4N07h3r_W4y}
 
 # Alternative Solutions
 
-With a challenge like this with the huge number of different binaries and all their sub-options there is bound to be more than one way to complete the challenge. Here I will document any other solutions and their authors.
+With a challenge like this with the huge number of different binaries and all their sub-options there is bound to be more than one way to complete the challenge. Here I will document any other solutions and their authors, so please if you have a working solution that is not listed here please contact me and I'll add it to the README.
 
 ## Alternative Main Solutions
 
@@ -170,6 +170,18 @@ Will produce the output:
 README.flag0000400000247200024720000000003413504135746010423 0ustar  13381338README.flag
 CTF{4ll_D474_5h4ll_B3_Fr33}
 ```
+
+### iconv
+Credit: [TheSeanis](https://github.com/TheSeanis), [ArtificialAmateur](https://github.com/ArtificialAmateur)
+
+`iconv` can also be used to print the conetents of a file. `iconv` is used to convert the encoding of text.
+
+Running just:
+```
+iconv README.flag
+```
+
+I really like this solution as it's the cleanest one I've seen so far.
 
 ## Alternative Bonus Solutions
 
