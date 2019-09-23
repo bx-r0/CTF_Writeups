@@ -4,4 +4,4 @@
 
 ## Reversing
 
-[```Keygen```](./Keygen/README.md)
+[```Keygen - Points: 600```](./Keygen/README.md)
