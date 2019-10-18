@@ -7,6 +7,7 @@ https://ctftime.org/team/68942
 
 | Pos |  Name                 |       Write-up                                 |    CTFtime Link               | 
 |----:|-----------------------|------------------------------------------------|-------------------------------|
+| 120 | Square CTF            | [Write up](./2019/SquareCTF_2019/README.md)    | https://ctftime.org/event/714 |
 | 59  | NACTF                 | [Write up](./2019/NACTF/README.md)             | https://ctftime.org/event/869 |
 |     | Google CTF            | [Write up](./2019/GoogleCTF/README.md)         | https://ctftime.org/event/809 |
 | 190 | Facebook CTF          | [Write up](./2019/FacebookCTF/README.md)       | https://ctftime.org/event/781 |
